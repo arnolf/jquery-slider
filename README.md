@@ -27,5 +27,6 @@ In you controller :
 		$scope.content = '<div>my new content<div>';
 		
 		...then slide somewhere
-		$scope.content = ...new content...
+		$scope.name = 'World';
+		$scope.content = '<div>Hello {{name}} !<div>';
 	}	
