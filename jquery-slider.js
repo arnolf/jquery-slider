@@ -2,7 +2,7 @@
  * jquery-slider.js
  * v0.1.0 - 2014-20-05
  * (c) Arnaud Fayolle;  License MIT
- * Created by: Arnaud Fayolle
+ * Created by: Arnaud Fayolle, https://github.com/arnolf/jquery-slider
  * Uses jQuery.js
  */
 (function ($) {
