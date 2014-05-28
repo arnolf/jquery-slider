@@ -24,9 +24,10 @@ Look at angular-demo...
 In you controller :
 
 	Index($scope) {
+		//initial content after page load
 		$scope.content = '<div>my new content<div>';
 		
-		...then slide somewhere
+		//...then slide somewhere
 		$scope.name = 'World';
 		$scope.content = '<div>Hello {{name}} !<div>';
 	}	
