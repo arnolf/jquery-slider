@@ -32,7 +32,7 @@ In you controller :
 		$scope.content = '<div>Hello {{name}} !<div>';
 	}	
 
-### Activate vertical overflow
+### Activate vertical overflow hidden
 
 	<body ng-controller="index" slider="content" direction="left" options="options" duration="2000">
 	
