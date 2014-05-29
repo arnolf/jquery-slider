@@ -9,12 +9,20 @@
             margin: 0px;
             padding: 0px;
         }
+        
+        #carousel {
+            position : relative;
+            left : 200px;
+            top : 100px;
+            height: 450px;
+            width: 800px;
+        }
     </style>
     <script src="js/lib/require.js" data-main="js/main"></script>
 </head>
 
-<body ng-controller="index" slider="content" direction="left" options="options" duration="2000">
-
+<body ng-controller="index" >
+    <div id="carousel" slider="content" direction="left" options="options" duration="2000"></div>
 </body>
 
 </html>
