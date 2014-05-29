@@ -31,3 +31,13 @@ In you controller :
 		$scope.name = 'World';
 		$scope.content = '<div>Hello {{name}} !<div>';
 	}	
+
+### Activate vertical overflow hidden
+
+	<body ng-controller="index" slider="content" direction="left" options="options" duration="2000">
+	
+	Index($scope) {
+		...
+		$scope.options = { 'vertical-overflow-hidden' : true };
+		...
+	}
