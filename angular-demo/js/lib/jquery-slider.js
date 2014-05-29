@@ -7,7 +7,7 @@
  */
 (function ($) {
 
-    $.fn.slider = function () {
+    $.fn.slider = function (options) {
         $(this).wrapInner("<div class='wrapper'><div class='mask'><div class='item'></div></div></div>");
         var width = parseInt($(this).find('.wrapper:first').parent().css('width'));
         var $item = $(this).find('.item');
@@ -20,7 +20,11 @@
         $wrapper.css('position', 'absolute');
         $wrapper.css('top', '0px');
         $wrapper.css('left', '0px');
-        $wrapper.css('overflow-x', 'hidden');
+        if (options != undefined && options['vertical-overflow-hidden'] == true) {
+            $wrapper.css('overflow', 'hidden');
+        } else {
+            $wrapper.css('overflow-x', 'hidden');
+        }
     };
 
     $.fn.slide = function (content, direction, duration, callback) {

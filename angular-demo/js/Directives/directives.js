@@ -5,7 +5,7 @@ define(['jquery-slider'], function (jQuery) {
         directives.slider = function($compile, $parse) {
             return {
                 link: function (scope, element, attrs) {
-                    jQuery(element).slider();
+                    jQuery(element).slider($parse(attrs.options)(scope));
                     scope.$watch(attrs.slider, function (value) {
                         jQuery(element).slide($compile(value)(scope), attrs.direction, parseInt(attrs.duration));
                     });
