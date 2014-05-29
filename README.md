@@ -13,3 +13,21 @@ First apply the slider to a DOM element :
 Then slide left or right to new content :
 
 	jQuery(document.body).slider('<div>my new content<div>', 'left', 2000, callback);
+
+Angular Directive
+=============
+
+Look at angular-demo...
+
+	<body ng-controller="index" slider="content" direction="left" duration="2000">
+
+In you controller :
+
+	Index($scope) {
+		//initial content after page load
+		$scope.content = '<div>my new content<div>';
+		
+		//...then slide somewhere
+		$scope.name = 'World';
+		$scope.content = '<div>Hello {{name}} !<div>';
+	}	
