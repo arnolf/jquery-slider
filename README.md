@@ -3,6 +3,8 @@ jquery-slider
 
 Perform horizontal sliding with dynamic content.
 
+Needs jQuery. For special easing effect, you can use jQuery UI.
+
 API
 =============
 
