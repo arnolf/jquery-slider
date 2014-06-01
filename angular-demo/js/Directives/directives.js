@@ -7,7 +7,7 @@ define(['jquery-slider'], function (jQuery) {
                 link: function (scope, element, attrs) {
                     jQuery(element).slider($parse(attrs.options)(scope));
                     scope.$watch(attrs.slider, function (value) {
-                        jQuery(element).slide($compile(value)(scope), attrs.direction, parseInt(attrs.duration));
+                        jQuery(element).slide($compile(value)(scope), attrs.direction, parseInt(attrs.duration), attrs.easing);
                     });
                 }
             };
