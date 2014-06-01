@@ -12,7 +12,7 @@ First apply the slider to a DOM element :
 	
 Then slide left or right to new content :
 
-	jQuery(document.body).slider('<div>my new content<div>', 'left', 2000, callback);
+	jQuery(document.body).slider('<div>my new content<div>', 'left', 2000, 'linear', callback);
 
 Angular Directive
 =============
