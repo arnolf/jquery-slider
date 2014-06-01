@@ -19,7 +19,7 @@ Angular Directive
 
 Look at angular-demo...
 
-	<body ng-controller="index" slider="content" direction="left" duration="2000">
+	<body ng-controller="index" slider="content" direction="left" duration="2000" easing="easeInOutCubic">
 
 In you controller :
 
@@ -34,7 +34,7 @@ In you controller :
 
 ### Activate vertical overflow hidden
 
-	<body ng-controller="index" slider="content" direction="left" options="options" duration="2000">
+	<body ng-controller="index" slider="content" direction="left" options="options" duration="2000" easing="easeInOutCubic"> 
 	
 	Index($scope) {
 		...
