@@ -55,7 +55,7 @@
             
             if (direction == 'left') {
                 $wrapper.append(newPage);
-                $newPage.addClass('item').html(content);
+                $newPage.html(content);
                 $newPage.css('width', width);
                 $newPage.css('height', '100%');
                 $newPage.css('left', width);
@@ -68,7 +68,7 @@
             	$oldPage.css('left', width);
                 $wrapper.scrollLeft(width);
                 $wrapper.prepend(newPage);
-                $newPage.addClass('item').html(content);
+                $newPage.html(content);
                 $newPage.css('width', width);
                 $newPage.css('height', '100%');
                 $newPage.css('left', 0);
