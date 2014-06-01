@@ -27,7 +27,7 @@
         }
     };
 
-    $.fn.slide = function (content, direction, duration, callback) {
+    $.fn.slide = function (content, direction, duration, easing, callback) {
         var $wrapper = $(this).find('.wrapper:first');
         var $page = $wrapper.find('div:first');
         if ($page.children().length === 0) {
@@ -79,7 +79,7 @@
             
             $wrapper.animate({
                 scrollLeft: scrollLeft
-            }, duration, function () {
+            }, duration, easing, function () {
                 $oldPage.remove();
                 $newPage.css('left', 0);
                 $newPage.css('top', 0);
